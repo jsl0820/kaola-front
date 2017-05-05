@@ -1,0 +1,12 @@
+.hot-market {
+	width: 100%;
+}
+
+.hot-market li {
+	width: 50%;
+	float: left;
+}
+
+.hot-market li img{
+	width: 100%;
+}
