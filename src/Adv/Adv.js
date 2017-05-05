@@ -27,6 +27,7 @@ class Adv extends Component{
 		var hours = parseInt(leftTime/1000/60/60%24,10);
 		var minutes = parseInt(leftTime/1000/60%60,10);  
 		var second = parseInt(leftTime/1000%60,10); 
+
 		this.setState({
 			hours:hours,
 			minutes:minutes,
@@ -35,7 +36,7 @@ class Adv extends Component{
 	}
 
 	showLeftTime(){
-		setInterval(this.leftTime("2017/5/1/ 00:00:00"),1000);
+		setInterval(this.leftTime("2017/5/20/ 00:00:00"),1000);
 	}
 
 	componentWillMount(){
