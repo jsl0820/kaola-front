@@ -9,17 +9,18 @@ const CAT_IMG  = [
 ];
 
 
-class Cats extends Component{
+const Cats = () =>{
+	let imgs = CAT_IMG;
+	let lis = imgs.map((imgs,idx)=>{
+		return <li><a href={imgs.href}><img src = {imgs.src}/></a></li>
+		});
+	
+	return (
+		<ul className="hot-market" > { lis } </ul>
+	)
 
-	render(){
-		let imgs = CAT_IMG;
-		let lis = imgs.map((imgs,idx)=>{
-				return <li><a href={imgs.href}><img src = {imgs.src}/></a></li>
-			});
-		return (
-			<ul className="hot-market" > { lis } </ul>
-		)
-	}
-}
+} 
 
 export default Cats;
+
+

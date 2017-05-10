@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './pages/Home.js';
 
-import Top from './Top/Top.js';
-import Banner from './Banner/Banner.js';
-import Nav from './Nav/Nav.js';
-import Cats from './Cats/Cats.js';
-import Adv from './Adv/Adv.js';
-import Selection from './Selection/Selection.js';
-import Footer from './Footer/Footer.js';
 
-class App extends Component {
-  
-  render() {
-  	
-    return (
-      <div>
-          <Top/>
-          <Banner/>
-          <Nav/>
-          <Adv/>
-          <Cats/>
-          <Selection/>
-          <Footer/>
-      </div>
-    );
-  }
-}
+const App = ()=>(
+	<Router>
+		<Route path="/" component={Home}/>
+	</Router>
+)
+
 export default App;

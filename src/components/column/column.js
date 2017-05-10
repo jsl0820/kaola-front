@@ -9,19 +9,26 @@ const NAV_LINK = [
 	{ href:'11', src:require('./NavImg/nav_4.png'), title :'拼团',     },
 ];
 
-class Nav extends Component{
-	render(){
-		let navlink = NAV_LINK;
-		let navitem = navlink.map((navlink,idx)=>{
-			return <NavItem navitem={navlink} key={'navitem'+idx}/>;
-			});
-		return (
-			<ul className="nav">
-				{navitem}
-			</ul>
-		)
-	}
-}
 
-export default Nav;
+
+const ColumnItem = (navitem) =>(
+	<li>
+		<a href="">
+			<img src={navitem.src} alt={navitem.title}/>
+			<p>{ navitem.title }</p>
+		</a>
+	</li>
+)
+
+
+const Column = (NAV_LINK) =>(
+
+	let item = NAV_LINK.map((navlink,idx)=>{
+			return <ColumnItem navitem={navlink} key={'navitem'+idx}/>;
+		});
+
+	return <ul className="nav"> {item} </ul>
+)
+
+export default Column;
 
