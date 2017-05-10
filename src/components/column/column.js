@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
-import NavItem  from './NavItem';
-import './nav.css';
+import './style.css';
+
 
 const NAV_LINK = [
 	{ href:'11', src:require('./NavImg/nav_1.png'), title :'每日上新', },
@@ -10,25 +10,26 @@ const NAV_LINK = [
 ];
 
 
-
-const ColumnItem = (navitem) =>(
+const ColumnItem = (props) =>(
 	<li>
 		<a href="">
-			<img src={navitem.src} alt={navitem.title}/>
-			<p>{ navitem.title }</p>
+			<img src={props.navitem.src} alt=""/>
+			<p>{props.navitem.title}</p>
 		</a>
 	</li>
 )
 
+const Hello = (props) =>(<div>{props.name}</div> )
 
-const Column = (NAV_LINK) =>(
+const Column = () =>{
+	let columnNode = NAV_LINK
+	let items = columnNode.map((columnNode,idx)=>{
+		return <ColumnItem navitem={columnNode} key={'navitem'+idx}/>
+	})
 
-	let item = NAV_LINK.map((navlink,idx)=>{
-			return <ColumnItem navitem={navlink} key={'navitem'+idx}/>;
-		});
 
-	return <ul className="nav"> {item} </ul>
-)
+	return <ul className="nav">{items}</ul>
+}
 
 export default Column;
 

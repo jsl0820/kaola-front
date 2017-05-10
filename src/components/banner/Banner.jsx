@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Banner.css';
+import './style.css';
 
-import BannerItem from './BannerItem/BannerItem.js';
-import BannerDot from './BannerDot/BannerDot.js';
+import BannerItem from './BannerItem.jsx';
+import BannerDot from './BannerDot.jsx';
 	
 const IMAGE_DATA = [
 	{

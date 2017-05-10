@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import './Top.css';
+import './style.css';
 
-
-
-const Top = ()=>(
+const Topbar = ()=>(
 
 	<div className="top">
 		<div className="search">
@@ -16,4 +14,4 @@ const Top = ()=>(
 	</div>
 )
 
-export default Top;
+export default Topbar;
