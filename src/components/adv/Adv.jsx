@@ -1,14 +1,11 @@
 import React,{ Component } from 'react';
-// import Des from './Des.js';
-import './Adv.css';
+import './style.css';
 
 const ADV_IMG = {
 	src : require('./image/1.webp'), 
 	alt : '限时抢购'
 };
 	
-
-
 class Adv extends Component{
 
 	constructor(props){
@@ -57,4 +54,8 @@ class Adv extends Component{
 	}
 }
 
+
+const Des = () =>(
+	<div> </div>
+	)
 export default Adv;

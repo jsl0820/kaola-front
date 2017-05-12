@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import './cats.css';
+import './style.css';
 
 const CAT_IMG  = [
 	{ href:'11',src:require('./images/1.webp')},

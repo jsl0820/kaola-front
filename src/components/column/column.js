@@ -19,8 +19,6 @@ const ColumnItem = (props) =>(
 	</li>
 )
 
-const Hello = (props) =>(<div>{props.name}</div> )
-
 const Column = () =>{
 	let columnNode = NAV_LINK
 	let items = columnNode.map((columnNode,idx)=>{

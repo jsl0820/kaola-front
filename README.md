@@ -16,7 +16,7 @@
 ## 约定
 
 * 目录 命名用小写  类似 "nav-bar" 的形式
-* 文件 命名用驼峰  类似 "NavBar.js"的形式
+* 文件 命名用驼峰  类似 "NavBar.jsx"的形式
 
 ## 学习小笔记
 ### 2017-05-09
@@ -30,7 +30,13 @@
 
 >理解无状态组件的属性
 
+组件：`<Hello name="jsl0820">`
 
+获取name：`const Hello = (props) =>(<div>{props.name}</div> )`
+
+>文件格式修改为.jsx
+
+* sublime需要安装babel插件
 
 
 ## 更改记录
