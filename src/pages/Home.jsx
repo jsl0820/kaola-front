@@ -8,7 +8,6 @@ import Selection from '../components/selection/Selection.jsx';
 import Footer from '../components/footer/Footer.jsx';
 
 const Home = ()=>{
-
     return (
         <div>
             <Topbar/>
@@ -16,8 +15,7 @@ const Home = ()=>{
             <Column/>
             <Cats/>
             <Adv/>
-           
-
+            <Footer/>
         </div>
     )
 }

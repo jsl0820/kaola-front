@@ -1,13 +1,36 @@
 footer{
-
-
+	padding: 22px 15px;
 }
 
-.footer-tit{
-	border: solid 1px red;
+.footer-alert{
+	height: 50px;
+	text-align: center;
+	font-size: 13px;
+	color:#999;
 }
 
-.footer-tit li{
-
-	float: left;
+.footer-href{
+	overflow: hidden;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+.footer-href ul{
+	/*border: solid #000 1px;*/
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	color:#848689;
+}
+
+.footer-href ul span{
+	margin: 0 10px;
+}
+
+.footer-copyright{
+	margin-top: 5px;
+	text-align: center;
+	height: 40px;
+}
+
