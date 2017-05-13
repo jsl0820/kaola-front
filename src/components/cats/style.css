@@ -1,5 +1,6 @@
 .hot-market {
 	width: 100%;
+	overflow: hidden;
 }
 
 .hot-market li {

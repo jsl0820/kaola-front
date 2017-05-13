@@ -1,5 +1,4 @@
 .adv{
-	border: solid blue 1px;
 	overflow: hidden;
 	display: block;
 	position: relative;
@@ -10,8 +9,13 @@
 	display: hidden;
 }
 
+.adv-buy{
+	/*border: red solid 1px;*/
+	padding:2px 10px;
+}
+
 .des {
-	border: solid red 1px;
+	/*border: solid red 1px;*/
 	position: absolute;
 	display: block;
 	top: 0;
