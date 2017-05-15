@@ -6,15 +6,32 @@ const ADV_IMG = {
 	alt : '限时抢购'
 };
 
-
 	
 class Adv extends Component{
+	render(){
+		let advimg = ADV_IMG;
+		return (
+			<a className = "adv" >
+				<img src = {advimg.src} alt =""/>
+				<div className="des">
+					<p>距离本场结束还有
+						<TimeMeter/>
+					</p>
+					<span className="adv-buy">入场疯抢</span>
+				</div>
+			</a>
+		)
+	}
+}
 
+
+//倒计时器
+class TimeMeter extends Component{
 	constructor(props){
 		super(props);
 		this.state = {h:0, m:0, s:0 };
 	}
-
+		
 	getLeftTime(){
 		let date = new Date();
 		let endTimeStp = this.getEndTimeStp();
@@ -35,7 +52,6 @@ class Adv extends Component{
 		}
 		return {h:hour, m:min, s:sec};
 	}
-
 
 	getEndTime(h){
 
@@ -76,31 +92,16 @@ class Adv extends Component{
 		this.setState(leftTime)	
 	}
 
-
 	componentDidMount(){
 		setInterval(()=>{
 			this.countDown();
 		}, 1000);
-		
 	}
 
 	render(){
-		let advimg = ADV_IMG;
-		return (
-			<a className = "adv" >
-				<img src = {advimg.src} alt =""/>
-				<div className="des">
-					<p>距离本场结束还有{this.state.h}:{this.state.m}:{this.state.s}</p>
-					<span className="adv-buy">入场疯抢</span>
-				</div>
-			</a>
-		)
+		return <span>{this.state.h}:{this.state.m}:{this.state.s}</span>
 	}
+
 }
 
-
-const Des = () =>(
-	<div> 
-	</div>
-	)
 export default Adv;
