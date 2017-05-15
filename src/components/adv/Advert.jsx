@@ -6,6 +6,7 @@ const ADV_IMG = {
 	alt : '限时抢购'
 };
 
+
 	
 class Adv extends Component{
 
@@ -14,17 +15,24 @@ class Adv extends Component{
 		this.state = {h:0, m:0, s:0 };
 	}
 
-
 	getLeftTime(){
 		let date = new Date();
 		let endTimeStp = this.getEndTimeStp();
 		let leftTime = endTimeStp-date;
 		let leftSecond = leftTime/1000;
+
 		let day  = Math.floor(leftSecond/(60*60*24));
 		let hour = Math.floor((leftSecond-day*24*60*60)/3600);
 		let min  = Math.floor((leftSecond-day*24*60*60-hour*3600)/60);  
 		let sec  = Math.floor(leftSecond-day*24*60*60-hour*3600-min*60);
-		
+
+		hour = '0'+hour;
+		if(min<10){
+			min = '0'+min;
+		}
+		if(sec<10){
+			sec = '0'+sec;
+		}
 		return {h:hour, m:min, s:sec};
 	}
 
