@@ -22,6 +22,9 @@
 ### 2017-05-09
 > react-route  版本为 V4+ 没有注意 api 的改变
 
+1. npm install --save-dev react-router
+2. npm install --save-dev react-router-dom
+
 ### 2017-05-10
 > 修改了部分有状态组件为无状态组件(因为之前不知道之间的区别)
 
