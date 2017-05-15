@@ -1,0 +1,23 @@
+.back-top{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.back-top i{
+	border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+	width: 11px;
+	height: 11px;
+	display: block;
+}
+
+.back-top p{
+	font-size: 12px;
+}
