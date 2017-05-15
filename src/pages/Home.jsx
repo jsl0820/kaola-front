@@ -3,7 +3,7 @@ import Topbar from '../components/top/TopBar.js';
 import Banner from '../components/banner/Banner.jsx';
 import Column from '../components/column/Column.js';
 import Cats from '../components/cats/Cats.jsx';
-import Adv  from '../components/adv/Adv.jsx';
+import Advert  from '../components/adv/Advert.jsx';
 import Selection from '../components/selection/Selection.jsx';
 import Footer from '../components/footer/Footer.jsx';
 
@@ -14,7 +14,8 @@ const Home = ()=>{
             <Banner/>
             <Column/>
             <Cats/>
-            <Adv/>
+            <Advert/>
+            <Selection/>
             <Footer/>
         </div>
     )
