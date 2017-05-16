@@ -26,6 +26,7 @@ class BackTop extends Component{
 
 	goTop(){
 		window.scrollTo(0,0);
+		
 	}
 
 	render(){
