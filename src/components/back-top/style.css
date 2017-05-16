@@ -10,6 +10,10 @@
 	text-align: center;
 }
 
+.hidden{
+	display: none;
+}
+
 .back-top i{
 	border-top: 1px solid #fff;
     border-left: 1px solid #fff;
