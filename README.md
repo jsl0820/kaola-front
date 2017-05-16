@@ -41,6 +41,8 @@
 
 * sublime需要安装babel插件
 
+### 2017-05-16
+> 用好 "addEventListener"
 
 ## 更改记录
 ### 2017-05-10
