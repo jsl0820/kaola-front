@@ -39,7 +39,6 @@ class TopNav extends Component{
         return index === this.state.current ? 'insert cur' : '';
     }
 
-	
 	render(){
 		return (
 			<header className="top-nav">
@@ -55,8 +54,5 @@ class TopNav extends Component{
 			)
 	}
 }
-
-
-	
 
 export default TopNav;
