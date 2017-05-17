@@ -15,6 +15,10 @@ class BackTop extends Component{
 		window.addEventListener('scroll', this.handleScroll.bind(this));
 	}
 
+	componentWillUnmount(){
+		window.removeEventListener('scroll', this.handleScroll.bind(this));
+	}
+
 	handleScroll(){
 		let y = document.body.scrollTop;
 		if(y>500){
@@ -26,7 +30,6 @@ class BackTop extends Component{
 
 	goTop(){
 		window.scrollTo(0,0);
-		
 	}
 
 	render(){

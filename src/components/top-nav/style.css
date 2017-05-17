@@ -1,0 +1,32 @@
+.top-nav{
+	height: 46px;
+	border-bottom: 1px solid #ddd;
+}
+
+.top-nav ul{
+	margin-right: 45px;
+	margin-left:45px;
+	height: 45px;
+}
+
+.top-nav li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: 45px;
+	color:#666;
+}
+
+.insert:after{
+	border-bottom: 1px solid red;
+	display: block;
+	content: " ";
+	margin:0 auto;
+	width: 28px;
+	font-size: 12px;
+	margin-top:-14px;
+}
+
+.cur{
+	color:#333;
+}
