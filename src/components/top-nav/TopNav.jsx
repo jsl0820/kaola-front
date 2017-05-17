@@ -26,34 +26,29 @@ const home={
 	backgroundSize: '200px'
 }
 
-
-
 class TopNav extends Component{
 
 	constructor(props) {
 		super(props)
 		this.state = {
-			click:true
+			current:1
 		}
 	}
 
+	itemNav = (index) => {
+        return index === this.state.current ? 'insert cur' : '';
+    }
 
-
-	handleClick(){
-		var item = document.getElemeentByclass('item');
-		console.log(item); 
-		
-	}
-
+	
 	render(){
 		return (
 			<header className="top-nav">
 				<span style={arrow}></span>
 				<ul>
-					<li className="item" onClick={this.handleClick.bind(this)}> 商品 </li>
-					<li className="item" onClick={this.handleClick.bind(this)}> 评价 </li>
-					<li className="item" onClick={this.handleClick.bind(this)}> 推荐 </li>
-					<li className="item" onClick={this.handleClick.bind(this)}> 详情 </li>
+					<li className={this.itemNav(1)} onClick={()=>{this.setState({current:1})}}> 商品 </li>
+					<li className={this.itemNav(2)} onClick={()=>{this.setState({current:2})}}> 评价 </li>
+					<li className={this.itemNav(3)} onClick={()=>{this.setState({current:3})}}> 推荐 </li>
+					<li className={this.itemNav(4)} onClick={()=>{this.setState({current:4})}}> 详情 </li>
 				</ul>
 				<span style={home}></span>
 			</header>
