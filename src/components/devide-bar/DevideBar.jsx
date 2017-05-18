@@ -4,7 +4,7 @@ import './style.css';
 
 
 
-const DevideBar =(props)=>{
+const DevideBar = (props)=>{
 
 	let x = props.item.x;
 	let y = props.item.y;

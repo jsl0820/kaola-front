@@ -23,7 +23,7 @@ const Detail = ()=>(
 		<GoodsIntro/>
 		<DevideBar item={{title:'推荐',x:-79,y:-109}}/>
 		<Recommend/>
-		<DevideBar item={{title:'图文详情',x:-79,y:-109}}/>
+		<DevideBar item={{title:'详情',x:-79,y:-109}}/>
 		<BackTop/>
 	</div>
 	) 
