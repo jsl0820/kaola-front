@@ -22,7 +22,7 @@ const Detail = ()=>(
 		<TopNav/>
 		<GoodsBanner/>
 		<GoodsIntro/>
-		<DevideBar item={{title:'推荐'}}/>
+		<DevideBar item={{title:'推荐'}} position={{x:-79,y:-109}}/>
 		<BackTop/>
 	</div>
 	) 

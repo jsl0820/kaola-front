@@ -3,16 +3,21 @@
 	background: #f1f1f1;
 	text-align: center;
 	line-height: 40px;
+	color:#a6a6a6;
 }
 
-.devide div span{
+.devide div span:nth-child(2){
+	font-size: 12px;
+	margin-left: 0px;
 }
 
 .devide div{
-	border: solid red 1px;
 	position: relative;
-	padding-left: 29px;
+	width: 49px;
+	padding-left: 25px; 
+	margin: 0 auto;
 }
+
 
 .devide div:before{
 	content: " ";
@@ -20,8 +25,8 @@
 	height: 1px;
 	width: 35px;
 	top: 18px;
-	left: 12px;
-	background: red;
+	left: -35px;
+	background: #ccc;
 }
 
 .devide div:after{
@@ -30,6 +35,6 @@
 	height: 1px;
 	width: 35px;
 	top:18px;
-	left:35;
-	background: red;
+	right:-35px;
+	background: #ccc;
 }
