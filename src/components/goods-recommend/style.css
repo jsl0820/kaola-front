@@ -1,0 +1,39 @@
+.recommend{
+	padding: 10px;
+	overflow: hidden;
+}
+
+.recommend-h{
+	padding-bottom: 10px;
+}
+
+.recommend ul li{
+	float: left;
+}
+
+.recommend-item{
+	padding-right: 10px;
+	/*background-color: blue;*/
+}
+
+.recommend-item img{
+	width: 100%;
+}
+
+.recommend-item p{
+	text-align: center;
+}
+
+.recommend-item-title{
+	font-size: 12px;
+}
+
+.recommend-item-price span{
+	font-size: 13px;
+	color: #e73c3c;
+}
+
+.recommend-item-price del{
+	font-size: 10px;
+	color: #999;
+}

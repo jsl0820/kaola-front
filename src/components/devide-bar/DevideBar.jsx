@@ -6,8 +6,8 @@ import './style.css';
 
 const DevideBar =(props)=>{
 
-	let x = props.position.x;
-	let y = props.position.y;
+	let x = props.item.x;
+	let y = props.item.y;
 
 	let iconStyle={
 		width:'16px',
