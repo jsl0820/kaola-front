@@ -51,8 +51,30 @@
 
 2.  const 代表一个值的 常量索引 （事实上绝大多数语言都提供这样的功能）。换句话说，变量名字在内存中的指针不能够改变，但是指向这个变量的值 可能 改变。
 
-3.用 let和const来代替 var  
+3. 用 let和const来代替 var  
 
+> props or this.props (注意)
+
+* 组件:RecommendItem:
+
+	```
+	<RecommendItem item={item} count={count}/>
+	```
+	
+	在同一个文件访问属性
+
+		cost RecommendItem = (props) =>{
+			let item = props.item;
+			let count = props.count;
+		}
+
+	不同文件
+
+		cost RecommendItem = (props) =>{
+			let item = this.props.item;
+			let count = this.props.count;
+		}
+		
 
 ## 更改记录
 ### 2017-05-10
