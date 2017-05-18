@@ -1,0 +1,8 @@
+.shopping{
+	height: 40px;
+	border: 1px solid red;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
