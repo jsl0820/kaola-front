@@ -1,0 +1,13 @@
+.cat-cont-prev{
+	position: sticky;
+	height: 35px;
+	background: red;
+	padding: 10px;
+	color: #333;
+	top:0;
+}
+
+.cat-cont-prev li{
+	font-size: 13px;
+	float: left;
+}

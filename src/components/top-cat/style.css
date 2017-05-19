@@ -1,0 +1,31 @@
+.top-cat{
+	position: relative;
+	height: 45px;
+	text-align: center;
+}
+
+.top-cat span{
+	font-size: 18px;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	color: #333;
+}
+.top-cat div{
+	position: absolute;
+	background: blue;
+	height: 20px;
+	right: 0;
+	top:0;
+}
+
+.top-cat-home{
+	height: 22px;
+	width: 22px;
+}
+.top-cat-log{
+
+}
+
+
+
