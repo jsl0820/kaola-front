@@ -26,7 +26,7 @@
 	position: absolute;
 	top:-1px;
 	right: -15px;
-	background: url('./producticon.png') no-repeat -8px -112px;
+	background: url('../STATIC/img/producticon.png') no-repeat -8px -112px;
 	background-size:200px;
 }
 
