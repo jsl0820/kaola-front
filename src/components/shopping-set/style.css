@@ -1,0 +1,67 @@
+
+.shop-set-send{
+	/*background-color: blue;*/
+	padding: 10px 40px 10px 10px;
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+}
+.shop-set-send div{
+	position: absolute;
+}
+.shop-set-to{
+	position: relative;
+	margin-left: 40px;
+	font-size: 12px;
+}
+
+.shop-set-loca{
+	position: relative;
+	margin-right: 15px;
+}
+
+.shop-set-loca:after{
+	content: " ";
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top:-1px;
+	right: -15px;
+	background: url('./producticon.png') no-repeat -8px -112px;
+	background-size:200px;
+}
+
+.shop-set-intro{
+	padding: 10px 40px 10px 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.shop-set-tit{
+	position: absolute;
+}
+
+.shop-set-intro ul{
+	margin-left: 40px;
+	background-color: red;
+}
+.shop-set-intro ul li{
+	float: left;
+	line-height: 22px;
+	height: 22px;
+	margin: 0 10px;
+	position: relative;
+	font-size: 12px;
+}
+
+.shop-set-intro ul li:after{
+	content: " ";
+	height: 6px;
+	width: 6px;
+	background-color: #ff8587;
+	direction: block;
+	position: absolute;
+	border-radius: 50%;
+	left: -10px;
+	top:8px;
+	font-size: 22px;
+}
