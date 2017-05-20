@@ -29,7 +29,7 @@ class Count extends Component {
 		let color = cont ? 'count-minus-active' :'count-minus-disable';
 		
 		return (
-			<div className="count">
+			<div className="count" style={this.props.styleSet}>
 				<div className={'count-minus '+color} 
 				onClick={this.decrease.bind(this,cont)}></div>
 				<div className="count-num">{this.state.count}</div>
