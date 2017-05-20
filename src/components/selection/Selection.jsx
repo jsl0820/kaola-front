@@ -10,6 +10,8 @@ class Selection extends Component{
 				<div className="selection-cont">
 					<Item/>
 					<Item/>
+					<Item/>
+					<Item/>
 				</div>
 			</div>
 		)

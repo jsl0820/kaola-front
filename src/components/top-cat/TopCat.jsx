@@ -5,10 +5,9 @@ const TopCat =()=>{
 
 	return <div className="top-cat">
 				<span>营养保健</span>
-				
 				<div>
-					<a href="" className="top-cat-home">11</a>
-					<a href="" className="top-cat-log">22</a>
+					<a href="" className="top-cat-home"></a>
+					<a href="" className="top-cat-log"></a>
 				</div>
 			</div>
 }

@@ -13,18 +13,32 @@
 }
 .top-cat div{
 	position: absolute;
-	background: blue;
-	height: 20px;
+	height: 30px;
+	margin-right: 20px;
+	margin-top: -10px;
 	right: 0;
-	top:0;
+	top:50%;
+	overflow: hidden;
 }
 
 .top-cat-home{
+	float: left;
+	display: block;
 	height: 22px;
 	width: 22px;
+	background: url('./home.png');
+	background-size: 22px;
 }
 .top-cat-log{
-
+	float: left;
+	display: block;
+	height: 22px;
+	width: 22px;
+	background: url('./kaola.png');
+	background-size: 22px;
+	margin-left: 10px;
+	top:0;
+	right: 0;
 }
 
 

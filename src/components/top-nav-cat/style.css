@@ -1,13 +1,20 @@
 .cat-cont-prev{
 	position: sticky;
-	height: 35px;
-	background: red;
-	padding: 10px;
+	height: 45px;
 	color: #333;
 	top:0;
+	text-align: center;
+	overflow-x: scroll;
+}
+
+.cat-cont-prev ul{
+
+	width: 150%;
 }
 
 .cat-cont-prev li{
+	padding: 0 20px;
 	font-size: 13px;
 	float: left;
+	line-height: 45px;
 }
