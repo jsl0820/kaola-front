@@ -10,8 +10,8 @@ class Cart extends Component{
 	render(){
 		return (
 			<div>
-				<CheckBox/>
-				{/*<CartItem/>*/}
+				{/*<CheckBox/>*/}
+				<CartItem/>
 			</div>
 			)
 	}
