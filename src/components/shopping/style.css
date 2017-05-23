@@ -111,6 +111,7 @@
 	align-items: center; 
 	font-size: 12px;
 	text-align: center;
+	border-top: solid 1px #ccc;
 }
 
 .shopping-statement-check span{
@@ -118,8 +119,8 @@
 }
 
 .shopping-statement-tolp{
+	border-top: solid 1px #ccc;
 	flex:1;
-	
 }
 
 .shopping-statement-tolp div{

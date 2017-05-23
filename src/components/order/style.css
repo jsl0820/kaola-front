@@ -1,0 +1,36 @@
+.order-btn-out{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+}
+
+.order-btn-box{
+	display: flex;
+	padding: 0.266667rem;
+	width: 100%;
+	font-size: 15px;
+	border-top: solid 1px #ccc;
+	align-items: center;
+}
+
+
+.order-btn-price{
+	flex:1;
+	display: flex;
+	color: #e31436;
+}
+
+.order-btn{
+
+	background: #e31436;
+	margin-right: 0;
+	height: 0.933333rem ;
+	padding:0 0.666666rem; 
+	color: #fff;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+}
