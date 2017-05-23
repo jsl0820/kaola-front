@@ -94,5 +94,50 @@
 	color: #Fff;
 }
 
+.shopping-statement{
+	height: 1.333333rem;
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	right: 0;
+	bottom:0;
+	display: flex;
+	flex-direction: justify-content;
+}
+
+.shopping-statement-check{
+	display: flex;
+	padding-left:0.2666667rem;
+	align-items: center; 
+	font-size: 12px;
+	text-align: center;
+}
+
+.shopping-statement-check span{
+	margin-left: 8px;
+}
+
+.shopping-statement-tolp{
+	flex:1;
+	
+}
+
+.shopping-statement-tolp div{
+	height: 1.333333rem;
+	margin-right: 8px;
+	align-items: center; 
+	justify-content: flex-end;
+	display: flex;
+}
+
+
+.shopping-statement-bnt{
+	display: flex;
+	background-color: #e31436;
+	color:#fff;
+	align-items: center;
+	padding: 0 0.6666667rem;
+}
+
 
 

@@ -1,4 +1,7 @@
 import React,{ Component } from 'react';
+import CheckBox from '../checkbox/CheckBox.jsx'
+
+
 import './style.css';
 
 
@@ -22,6 +25,23 @@ const Button = () =>{
 		   </div> 
 }
 
+class Statement extends Component{
+
+	render(){
+		return(
+			<div className="shopping-statement">
+				<div className="shopping-statement-check"> <CheckBox/> <span>全选</span></div>
+				<div className="shopping-statement-tolp">
+					<div>
+							总价 : <span>(￥59)</span>
+					</div>
+				</div>
+				<div className="shopping-statement-bnt">结算</div>
+			</div>
+		)
+	}
+} 
+
 
 class Shopping extends Component{
 
@@ -38,4 +58,4 @@ class Shopping extends Component{
 	}
 }
 
-export default Shopping
+export default Statement
