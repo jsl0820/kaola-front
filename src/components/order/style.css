@@ -34,3 +34,90 @@
 	align-items: center;
 	border-radius: 3px;
 }
+
+.order-item{
+	border: solid 1px red;
+	display: flex;
+	padding: 0.266667rem 0.266667rem 0.266667rem 0;
+}
+
+.order-item-img{
+	width: 2.133333rem;
+}
+
+.order-item-img img{
+	width: 2.133333rem;
+}
+
+.order-item-txt{
+	margin-right: 20px;
+	color: #333;
+	font-size: 12px;
+}
+
+.order-item-price p:nth-child(1){
+	font-size: 13px;
+}
+
+.order-item-price p:nth-child(2){
+	color: #999;
+	font-size: 13px;
+}
+
+.order-fee{
+	border: solid 1px red;
+}
+
+.order-fee-item{
+	display: flex;
+	padding: 0.266667rem;
+	color: #666;
+}
+
+.order-fee-item div:nth-child(1){
+	flex:1;
+}
+
+.address{
+	display: flex;
+	border: 1px solid red;
+    padding: 0.4rem 0.266667rem;
+    background-color: #5d5f63;
+    color: #fff;
+    font-size: 13px;
+
+}
+
+.address-pepo{
+	flex:1;
+}
+.address p{
+	display: flex;
+}
+
+.address-add{
+	margin-top: 0.333333rem;
+}
+
+.address-arr{
+	width: 14px;
+	position: relative;
+}
+
+.address-arr:after{
+	content: " ";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: solid 1px #999;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+
+
+
