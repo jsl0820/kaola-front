@@ -7,6 +7,8 @@ import Advert  from '../components/adv/Advert.jsx';
 import Selection from '../components/selection/Selection.jsx';
 import Footer from '../components/footer/Footer.jsx';
 import BackTop from '../components/back-top/BackTop.jsx';
+
+
 const Home = ()=>{
     return (
         <div>
