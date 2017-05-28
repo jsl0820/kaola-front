@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
+
 import Home from './pages/Home.jsx';
 import Detail from './pages/Detail.jsx';
 import CatList from './pages/CatList.jsx';
