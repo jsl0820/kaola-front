@@ -74,7 +74,16 @@
 			let item = this.props.item;
 			let count = this.props.count;
 		}
-		
+
+### 2017-06-02
+
+>css 局部作用域
+
+产生局部作用域的方法
+
+	className={style.title}  //title 为类名
+	构建工具会将style.title编译成一个hash类名
+
 
 ## 更改记录
 ### 2017-05-10

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
-import Home from './pages/Home.jsx';
-import Detail from './pages/Detail.jsx';
-import CatList from './pages/CatList.jsx';
-import Cart from './pages/Cart.jsx';
-import Order from './pages/Order.jsx';
-import './static/App.css'
+import Home from '../pages/Home.jsx';
+import Detail from '../pages/Detail.jsx';
+import CatList from '../pages/CatList.jsx';
+import Cart from '../pages/Cart.jsx';
+import Order from '../pages/Order.jsx';
+import '../static/App.css'
 
-const App = ()=>{
+const AppRoute = ()=>{
 
 	return (
 		<Router>
@@ -25,4 +26,4 @@ const App = ()=>{
 	)
 }
 
-export default App;
+export default AppRoute;
