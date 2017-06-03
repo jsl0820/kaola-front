@@ -12,7 +12,7 @@ const CAT_IMG  = [
 const Cats = () =>{
 	let imgs = CAT_IMG;
 	let lis = imgs.map((imgs,idx)=>{
-		return <li><a href={imgs.href}><img src = {imgs.src}/></a></li>
+		return <li key={idx}><a href={imgs.href}><img src = {imgs.src}/></a></li>
 		});
 	
 	return (

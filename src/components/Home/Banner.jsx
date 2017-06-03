@@ -48,15 +48,20 @@ class Banner extends Component{
 	}
 
 	goPlay(){
+		
 		if(this.props.autoplay){
 			this.autoPlayFlag = setInterval(()=>{
-				this.turn (1);
+				this.turn(1);
 			},this.props.delay*1000);
 		}
 	}
 
 	componentDidMount(){
-		this.goPlay();
+		this.goPlay()
+	}
+
+	componentWillUnmount() {
+  		clearInterval(this.autoPlayFlag)
 	}
 
 	render(){
@@ -67,7 +72,7 @@ class Banner extends Component{
 			return <BannerItem item={images} count={count} key={'item'+idx}/>
 		});
 
-		let dotNode = <BannerDot turn={this.turn.bind(this)} count={count} nowLocal={this.state.nowLocal}/>
+		let dotNode = <BannerDot  count={count} nowLocal={this.state.nowLocal}/>
 
 		return (
 			<div className="banner" >

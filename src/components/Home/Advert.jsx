@@ -92,10 +92,16 @@ class TimeMeter extends Component{
 		this.setState(leftTime)	
 	}
 
+
 	componentDidMount(){
-		setInterval(()=>{
+		this.timeOutFalge = setInterval(()=>{
 			this.countDown();
 		}, 1000);
+	}
+
+	//清除定时器
+	componentWillUnmount(){
+		clearInterval(this.timeOutFalge)
 	}
 
 	render(){

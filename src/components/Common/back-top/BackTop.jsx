@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 
+let handleScroll;
 
 class BackTop extends Component{
 	
@@ -12,11 +13,12 @@ class BackTop extends Component{
 	}
 
 	componentDidMount(){
-		window.addEventListener('scroll', this.handleScroll.bind(this));
+		this.handleScroll = this.handleScroll.bind(this);
+		window.addEventListener('scroll',this.handleScroll);
 	}
 
 	componentWillUnmount(){
-		window.removeEventListener('scroll', this.handleScroll.bind(this));
+		window.removeEventListener('scroll', this.handleScroll);
 	}
 
 	handleScroll(){
