@@ -1,0 +1,32 @@
+.back-top{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.hidden{
+	display: none;
+}
+
+.back-top i{
+	border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: rotate(45deg);
+	width: 11px;
+	height: 11px;
+	display: block;
+	margin-left: 14px;
+	margin-top: 10px;
+	transform-origin: center center;
+}
+
+.back-top p{
+	margin-top: -5px;
+	font-size: 12px;
+}

@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import Topbar from '../components/top/TopBar.js';
-import Banner from '../components/banner/Banner.jsx';
-import Column from '../components/column/Column.js';
-import Cats from '../components/cats/Cats.jsx';
-import Advert  from '../components/adv/Advert.jsx';
-import Selection from '../components/selection/Selection.jsx';
-import Footer from '../components/footer/Footer.jsx';
-import BackTop from '../components/back-top/BackTop.jsx';
+
+import Topbar from '../components/Home/TopBar.jsx';
+import Banner from '../components/Home/Banner.jsx';
+import Cats from '../components/Home/Cats.jsx';
+import Advert  from '../components/Home/Advert.jsx';
+import Selection from '../components/Home/Selection.jsx';
+import Footer from '../components/Common/footer/Footer.jsx';
+import BackTop from '../components/Common/back-top/BackTop.jsx';
+
+
+import { HOT_GOODS } from './HomeRedux.jsx';
 
 
 const Home = ()=>{
@@ -14,10 +17,9 @@ const Home = ()=>{
         <div>
             <Topbar/>
             <Banner/>
-            <Column/>
             <Cats/>
             <Advert/>
-            <Selection/>
+            <Selection goodes={HOT_GOODS} />
             <Footer/>
             <BackTop/>
         </div>

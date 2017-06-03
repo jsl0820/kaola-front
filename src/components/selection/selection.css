@@ -1,0 +1,52 @@
+.selection-box{
+	width: 100%;
+	overflow: hidden;
+	background:#f0f0f0;
+}
+
+.selection-cont{
+	width: 100%;
+	padding: 3px 5px;
+}
+
+.selection-item{
+	width: 47%;
+	float: left;
+	padding: 3px;
+}
+
+.selection-item img{
+	width: 100%;
+}
+
+.selection-title{
+	margin-top: -2px;
+	background-color:#fff; 
+	padding: 5px 8px 8px;
+	font-size: 14px;
+
+}
+
+.selection-goods{
+	word-wrap: break-word;
+	overflow: hidden;
+	height: 32px;
+	line-height: 16px;
+
+}
+.selection-price{
+	font-size: 12px;
+	color: #999
+}
+
+.selection-title span{
+	color: #d22147;
+}
+
+.selection-title-discount{
+	border:1px solid #d22147;
+	border-radius: 3px;
+	font-size: 11px;
+	padding: 0 2px;
+}
+
