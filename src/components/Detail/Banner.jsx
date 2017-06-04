@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import './style.css';
-
+import './banner.css';
 import BannerItem from './BannerItem.jsx';
 import BannerDot from './BannerDot.jsx';
 	
 const IMAGE_DATA = [
 	{
-		src:require('./images/1.webp'),
+		src:require('./images/800.webp'),
 		alt:'images-1',
 	},
 	{
-		src:require('./images/2.webp'),
+		src:require('./images/801.webp'),
 		alt:'images-2'
 	},
 	{
-		src:require('./images/3.webp'),
+		src:require('./images/802.webp'),
 		alt:'images-3',
 	},
 	{
-		src:require('./images/5.webp'),
+		src:require('./images/803.webp'),
 		alt:'images-5',
 	},
 	{
-		src:require('./images/6.webp'),
+		src:require('./images/804.webp'),
 		alt:'images-6',
 	},
 	];
@@ -70,7 +69,7 @@ class Banner extends Component{
 		let dotNode = <BannerDot turn={this.turn.bind(this)} count={count} nowLocal={this.state.nowLocal}/>
 
 		return (
-			<div className="banner" >
+			<div className="goods-banner" >
 				<ul style={{
 					left:-100*this.state.nowLocal + '%',
 					width:count*100+'%',

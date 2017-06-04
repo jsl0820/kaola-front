@@ -1,4 +1,5 @@
-import React,{ Component } from 'react';
+import React  from 'react';
+import { Link } from 'react-router-dom';
 import './cats.css';
 
 const CAT_IMG  = [
@@ -12,7 +13,12 @@ const CAT_IMG  = [
 const Cats = () =>{
 	let imgs = CAT_IMG;
 	let lis = imgs.map((imgs,idx)=>{
-		return <li key={idx}><a href={imgs.href}><img src = {imgs.src}/></a></li>
+		
+		return <li key={idx}> 
+					<Link to='/catlist'>
+						<img src={imgs.src} alt=' '/> 
+					</Link>
+				</li>
 		});
 	
 	return (

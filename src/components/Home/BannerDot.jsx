@@ -19,8 +19,8 @@ class BannerDot extends Component{
 		for(let i=0;i<count;i++){
 			dotNodes[i] = (
 				<span
-				key = {'dot' + i}
-				className={"banner-dot"+(i===this.props.nowLocal?"slider-dot-selected":"")}
+				key={'dot' + i}
+				className={"banner-dot"+(i===nowLocal?"slider-dot-selected":"")}
 				onClick={this.handleDotClick.bind(this,i)}
 				>
 				</span>

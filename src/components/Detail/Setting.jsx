@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import Img from '../../static/img/producticon.png';
-import './style.css';
+import './setting.css';
 
 const Setting = ()=>{
 

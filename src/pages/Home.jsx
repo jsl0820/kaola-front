@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Topbar from '../components/Home/TopBar.jsx';
 import Banner from '../components/Home/Banner.jsx';
@@ -10,7 +10,6 @@ import BackTop from '../components/Common/back-top/BackTop.jsx';
 
 
 import { HOT_GOODS, BANNER_IMG } from './HomeRedux.jsx';
-
 
 const Home = ()=>{
     return (

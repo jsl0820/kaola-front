@@ -1,8 +1,6 @@
-import React, { Componet } from 'react';
+import React from 'react';
 import Img from '../../static/img/producticon.png';
-import './style.css';
-
-
+import './devidebar.css';
 
 const DevideBar = (props)=>{
 

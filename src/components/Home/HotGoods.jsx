@@ -30,9 +30,9 @@ const Item = (props)=>{
 
 	let { item } = props;
 	let { id, name, picture, pack, domestic, price, tip } = item;
-
+	let url = '/detail/'+id;
 	return (
-		<Link to="/detail">
+		<Link to={url}>
 			<div className="selection-item">
 				<img src={require(picture)} alt={name}/>
 				<div className="selection-title">

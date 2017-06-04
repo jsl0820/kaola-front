@@ -1,14 +1,14 @@
-import React,{ Component } from 'react';
-import TopNav from '../components/top-nav/TopNav.jsx';
-import GoodsBanner from '../components/goods-banner/Banner.jsx';
-import GoodsIntro from '../components/goods-intro/GoodsIntro.jsx';
-import DevideBar from '../components/devide-bar/DevideBar.jsx';
-import Recommend from '../components/goods-recommend/Recommend.jsx';
-import GoodsDetail from '../components/goods-detail/GoodsDetail.jsx';
-import BackTop from '../components/back-top/BackTop.jsx';
-import Footer from '../components/footer/Footer.jsx';
-import Shopping from '../components/shopping/Shopping.jsx';
-import Setting from '../components/shopping-set/Setting.jsx';
+import React from 'react';
+import TopNav from '../components/Detail/TopNav.jsx';
+import GoodsBanner from '../components/Detail/Banner.jsx';
+import GoodsIntro from '../components/Detail/GoodsIntro.jsx';
+import DevideBar from '../components/Detail/DevideBar.jsx';
+import Recommend from '../components/Detail/Recommend.jsx';
+import GoodsDetail from '../components/Detail/GoodsDetail.jsx';
+import BackTop from '../components/Common/back-top/BackTop.jsx';
+import Footer from '../components/Common/footer/Footer.jsx';
+import Shopping from '../components/Detail/Shopping.jsx';
+import Setting from '../components/Detail/Setting.jsx';
 
 
 const grayBarStyle={

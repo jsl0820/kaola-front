@@ -47,10 +47,6 @@ export const BANNER_IMG = [
 		alt:'images-1',
 	},
 	{
-		src:'./images/4.webp',
-		alt:'images-1',
-	},
-	{
 		src:'./images/5.webp',
 		alt:'images-1',
 	},
