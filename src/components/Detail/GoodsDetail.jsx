@@ -1,7 +1,7 @@
-import React,{ Componets } from 'react';
+import React  from 'react';
 
-const GoodsDetail = ()=>(
-	<img src={require('./109.webp')} style={{width:'100%'}}alt=""/>
-	)
+const GoodsDetail = (props)=>(
+	<img src={require(props.img)} style={{width:'100%'}} alt=""/>
+)
 
 export default GoodsDetail;

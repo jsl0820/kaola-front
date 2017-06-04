@@ -1,6 +1,6 @@
 ## 边学边做仿kaola-demo
 ### 目前的技术栈 update 2017-05-09
-- react + react-route
+- react + react-route + redux
 ## 版本
 ```
  react: ^15.4.2
@@ -84,10 +84,15 @@
 	className={style.title}  //title 为类名
 	构建工具会将style.title编译成一个hash类名
 
+### 2017-06-04
+
+	目前 babel-loader 版本  对于 
+	import * as newname from './director.jsx'
+	编译有错误 正在寻找解决方法
 
 ## 更改记录
 ### 2017-05-10
- > 修改目录结构
+> 修改目录结构
  	
 	|-src
 	  |-components 组件库
@@ -95,11 +100,31 @@
 			|-Banners.js
 			|-style.css
 		|-...
-	  |-oages 页面
+	  |-pages 页面
 		|-Home.js
 		|-...
 	  |-App.js
 	  |-index.js 
+
+### 2017-06-04 
+>修改目录结构
+	
+	|-src
+	  |-components 组件库
+		|-Common 通用组件库
+			|-...  组件
+		|-Home 
+			|-... Home 页面组件
+	  |-pages 页面
+		|-Home.jsx 
+		|-HomeRedux.jsx 
+		|-Home.css 
+	  |-redux
+	  	|-configureStore.jsx App总Store
+	  	|-reducers.jsx	App总reducers	
+	  |-routes
+	    |-routes.jsx 路由文件 
+	  |-index.jsx 入口文件 
 	
 	
 

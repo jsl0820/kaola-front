@@ -11,7 +11,7 @@ class BannerItem extends Component{
 		let width=100/count+'%';
 		return(
 			<li className="goods-banner-item" style={{width:width}}>
-				<img src={item.src} alt={item.alt}/>
+				<img src={require(item.src)} alt={item.alt}/>
 			</li>
 		)
 	}

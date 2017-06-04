@@ -1,41 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './recommend.css'
 
-const Goods =[ 
-	{
-		title:'网易严选 时尚拉链尼龙双肩包',
-		price:'129',
-		origina:'300',
-		picture:require('./images/800.webp')
-	},
-	{
-		title:'网易严选 时尚拉链尼龙双肩包',
-		price:'129',
-		origina:'300',
-		picture:require('./images/800.webp')
-	},
 
-	{
-		title:'网易严选 时尚拉链尼龙双肩包',
-		price:'129',
-		origina:'300',
-		picture:require('./images/800.webp')
-	},
-	{
-		title:'网易严选 时尚拉链尼龙双肩包',
-		price:'129',
-		origina:'300',
-		picture:require('./images/800.webp')
-	},
-	{
-		title:'网易严选 时尚拉链尼龙双肩包',
-		price:'129',
-		origina:'300',
-		picture:require('./images/800.webp')
-	},
-	];
-
-const RecommendItem = ( props ) =>{
+const RecommendItem = (props) =>{
 
 	let item = props.item;
 	let point = props.point;
@@ -48,21 +16,22 @@ const RecommendItem = ( props ) =>{
 
 	return (
 		<li className="recommend-item" style={style}>
-			<a href="" >
-				<img src={item.picture} alt=""/>
+			<Link to='/detail'>
+				<img src={require(item.picture)} alt=""/>
 				<p className="recommend-item-title">{item.title}</p>
 				<p className="recommend-item-price">
 					<span>￥{item.price}</span>
 					<del>￥{item.origina}</del>
 				</p>
-			</a>
+			</Link>
 		</li>
 	)
 }
 
-const Recommend = ()=>{
-
-	let count = Goods.length;
+const Recommend = (props)=>{
+ 
+	let { recommend } = props;
+	let count = recommend.length;
 	let screenWidth = document.body.clientWidth;
 	let itemWidth = (1/3)*(screenWidth-10);
 	let realWidth = (count/3)*(screenWidth+20);
@@ -78,8 +47,8 @@ const Recommend = ()=>{
 		itemWidth:itemWidth,
 	}
 
-	let recommends = Goods.map((Goods,idx)=>{
-			return <RecommendItem item={Goods}  point={point} key={'item'+idx}/>
+	let recommends = recommend.map((recommend,idx)=>{
+			return <RecommendItem item={recommend}  point={point} key={'item'+idx}/>
 		});
 
 	return (

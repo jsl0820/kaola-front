@@ -17,10 +17,7 @@ class Banner extends Component{
 	}
 
 	turn (n){
-
 		var _n = this.state.nowLocal+n;
-
-
 		if(_n<0){
 			_n = _n + this.props.banner.length;
 		}
@@ -55,7 +52,7 @@ class Banner extends Component{
 			return <BannerItem item={banner} count={count} key={'item'+idx}/>
 		});
 
-		let dotNode = <BannerDot turn={this.turn} count={count} nowLocal={this.state.nowLocal}/>
+		let dotNode = <BannerDot turn={this.turn.bind(this)} count={count} nowLocal={this.state.nowLocal}/>
 
 
 		return (

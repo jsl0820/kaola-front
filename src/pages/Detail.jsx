@@ -10,6 +10,7 @@ import Footer from '../components/Common/footer/Footer.jsx';
 import Shopping from '../components/Detail/Shopping.jsx';
 import Setting from '../components/Detail/Setting.jsx';
 
+import { DETAIL_BANNER, DETAIL_GOODS, DETAIL_IMG, RECOMMEND} from './DetailRedux.jsx';
 
 const grayBarStyle={
 	background: '#f1f1f1', 
@@ -24,14 +25,14 @@ const GrayBar = (props)=>(
 const Detail = ()=>(
 	<div>
 		<TopNav/>
-		<GoodsBanner/>
-		<GoodsIntro/>
+		<GoodsBanner banner={DETAIL_BANNER} />
+		<GoodsIntro detail={DETAIL_GOODS}/>
 		<GrayBar/>
 		<Setting/>
 		<DevideBar item={{title:'推荐',x:-79,y:-109}}/>
-		<Recommend/>
+		<Recommend recommend={RECOMMEND}/>
 		<DevideBar item={{title:'详情',x:-79,y:-109}}/>
-		<GoodsDetail/>
+		<GoodsDetail img={DETAIL_IMG}/>
 		<Footer/>
 		<BackTop/>
 		<Shopping/>

@@ -3,28 +3,6 @@ import './banner.css';
 import BannerItem from './BannerItem.jsx';
 import BannerDot from './BannerDot.jsx';
 	
-const IMAGE_DATA = [
-	{
-		src:require('./images/800.webp'),
-		alt:'images-1',
-	},
-	{
-		src:require('./images/801.webp'),
-		alt:'images-2'
-	},
-	{
-		src:require('./images/802.webp'),
-		alt:'images-3',
-	},
-	{
-		src:require('./images/803.webp'),
-		alt:'images-5',
-	},
-	{
-		src:require('./images/804.webp'),
-		alt:'images-6',
-	},
-	];
 
 class Banner extends Component{
 
@@ -37,11 +15,12 @@ class Banner extends Component{
 
 	turn (n){
 		var _n = this.state.nowLocal+n;
+		let { banner } = this.props;
 		if(_n<0){
-			_n = _n + IMAGE_DATA.length;
+			_n = _n + banner.length;
 		}
-		if(_n>=IMAGE_DATA.length){
-			_n = _n-IMAGE_DATA.length;
+		if(_n>=banner.length){
+			_n = _n-banner.length;
 		}
 		this.setState({nowLocal:_n});
 	}
@@ -58,15 +37,23 @@ class Banner extends Component{
 		this.goPlay();
 	}
 
-	render(){
-		let images = IMAGE_DATA;
-		let count = images.length;
+	componentWillUnmount() {
+  		clearInterval(this.autoPlayFlag)
+	}
 
-		let itemNode=images.map((images,idx)=>{
-			return <BannerItem item={images} count={count} key={'item'+idx}/>
+	render(){
+
+		let { banner } = this.props;
+		let count = banner.length;
+
+		let itemNode=banner.map((banner,idx)=>{
+			return <BannerItem item={banner} count={count} key={'item'+idx}/>
 		});
 
-		let dotNode = <BannerDot turn={this.turn.bind(this)} count={count} nowLocal={this.state.nowLocal}/>
+		let dotNode = <BannerDot 
+			turn={this.turn.bind(this)} 
+			count={count} 
+			nowLocal={this.state.nowLocal}/>
 
 		return (
 			<div className="goods-banner" >
