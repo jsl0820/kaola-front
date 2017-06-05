@@ -14,13 +14,13 @@ class BannerDot extends Component{
 	render(){
 		
 		let dotNodes = [];
-		let{ count ,nowLocal } = this.props;
+		let{ count , nowLocal } = this.props;
 		
 		for(let i=0;i<count;i++){
 			dotNodes[i] = (
 				<span
-				key = {'dot' + i}
-				className={"goods-banner-dot"+(i===this.props.nowLocal?"slider-dot-selected":"")}
+				key={'dot' + i}
+				className={"goods-banner-dot"+(i===nowLocal?"slider-dot-selected":"")}
 				onClick={this.handleDotClick.bind(this,i)}
 				>
 				</span>

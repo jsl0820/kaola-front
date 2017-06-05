@@ -1,6 +1,5 @@
 import React,{ Component } from 'react';
 import { Link }  from 'react-router-dom';
-import CheckBox from '../checkbox/CheckBox.jsx'
 
 import './buybar.css' 
 
@@ -9,10 +8,10 @@ import './buybar.css'
 const Button = () =>{
 
 	return <div className="shop-buttons">
-				<Link to='/detail/AddCart'>
+				<Link to='/detail/AddCart/1'>
 					<div style={{background:'#ff8587'}}>加入购物车</div>
 				</Link>
-				<Link to='/detail/BuyNow'>
+				<Link to='/detail/BuyNow/1'>
 					<div style={{background:'#e31436'}}>立即购买</div>
 				</Link>
 		   </div> 

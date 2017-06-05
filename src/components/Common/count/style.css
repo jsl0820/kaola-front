@@ -1,0 +1,73 @@
+.count{
+	height: 0.6rem;
+	width: 2.5rem;
+	position: relative;
+	text-align: center;
+	line-height: 0.6rem;
+	border-radius: 2px;
+	border:1px solid #aaa;
+}
+.count-minus{
+	float: left;
+	position: absolute;
+	border-right: 1px solid #aaa;
+	width: 0.6rem;
+	height: 0.6rem;
+}
+
+
+.count-minus:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 0.3rem;
+	height: 0.05rem;
+	left:0.15rem;
+	top:0.3rem;
+}
+
+.count-minus-active:after{
+	border-bottom: 0.05rem solid #333;
+}
+
+.count-minus-disable:after{
+	border-bottom: 0.05rem solid #ccc;
+}
+
+
+.count-plus{
+	border-left: 1px solid #aaa;
+	position: absolute;
+	width: 0.6rem;
+	height: 0.6rem;
+	right: 0;
+	top: 0;
+}
+
+
+.count-plus:after{
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 0.3rem;
+	height: 0.05px;
+	border-bottom: 0.05rem solid #333;
+	left:0.15rem;
+	top: 0.3rem;
+}
+
+.count-plus:before{
+	position: relative;
+	content: " ";
+	display: block;
+	width: 0.3rem;
+	height: 0.05px;
+	left:0.15rem;
+	top: 0.3rem;
+	border-bottom: 0.05rem solid #333;
+	transform: rotate(90deg)
+}
+
+
+
+

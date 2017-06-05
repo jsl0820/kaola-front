@@ -4,7 +4,7 @@ import TopBar from '../components/shopping-cart/TopBar.jsx'
 import Product from '../components/shopping-cart/Product.jsx'
 import CartItem from '../components/shopping-cart/CartItem.jsx'
 import CheckBox from '../components/checkbox/CheckBox.jsx'
-import Statement from '../components/shopping/Shopping.jsx'
+// import Statement from '../components/shopping/Shopping.jsx'
 
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -20,7 +20,6 @@ class App extends Component{
 			<TopBar/>
 			<CartItem/>
 			<CartItem/>
-			<Statement/>
 		</div>
 	}
 }

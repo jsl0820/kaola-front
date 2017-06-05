@@ -16,7 +16,7 @@ const AppRoute = ()=>{
 		<Router>
 			<switch>
 				<Route path='/home' component={Home}/>
-				<Route path='/detail/:page' component={Detail}/>
+				<Route path='/detail/:page/:id' component={Detail}/>
 				<Route path='/catlist' component={CatList}/>
 				<Route path='/cart' component={Cart}/>
 				<Route path='/order' component={Order}/>

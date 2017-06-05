@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import TopNav from '../components/Detail/TopNav.jsx';
 import GoodsBanner from '../components/Detail/Banner.jsx';
@@ -9,10 +8,11 @@ import Recommend from '../components/Detail/Recommend.jsx';
 import GoodsDetail from '../components/Detail/GoodsDetail.jsx';
 import BackTop from '../components/Common/back-top/BackTop.jsx';
 import Footer from '../components/Common/footer/Footer.jsx';
-// import Shopping from '../components/Detail/Shopping.jsx';
 
-import Shopping from '../components/Detail/BuyBar.jsx';
+import BuyBar from '../components/Detail/BuyBar.jsx';
 import Setting from '../components/Detail/Setting.jsx';
+
+import { TopBar, Product, ProNum } from '../components/Detail/ShopCart.jsx';
 
 
 import { DETAIL_BANNER, DETAIL_GOODS, DETAIL_IMG, RECOMMEND} from './DetailRedux.jsx';
@@ -44,16 +44,31 @@ const Goods = ()=>(
 ) 
 
 
+const ShopCart=()=>(
+	<div>
+		<TopBar/>
+		<Product/>
+		<ProNum/>
+	</div>
+)
+
+
+
 const Detail=({match})=>{
 
 	let page = match.params.page;
-	let part = <Goods/>;
+	let part;
 
+	if(page==='DefaultBar'){
+		part = <Goods/>
+	}else{
+		part = <ShopCart/>
+	}
 	
 	return (
 		<div>
 			{part}
-			<Shopping showPage={page} />
+			<BuyBar showPage={page} />
 		</div>
 	)
 }

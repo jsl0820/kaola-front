@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './goodsintro.css';
 
 
@@ -19,7 +19,7 @@ const GoodsIntro = (props)=>{
 				<p>{detail.intro}</p>
 			</div>
 			<div className="goods-intro-sub">
-				<img src={require('./images/10001.png')} /> <span>{detail.brand}</span>
+				<img src={require('./images/10001.png')}  alt={detail.name}/> <span>{detail.brand}</span>
 			</div>
 		</div>
 		)

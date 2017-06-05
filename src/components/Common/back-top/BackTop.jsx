@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
 
-let handleScroll;
 
 class BackTop extends Component{
 	

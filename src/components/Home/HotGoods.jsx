@@ -5,9 +5,7 @@ import './hotgoods.css';
 
 class HotGoods extends Component{
 
-	constructor(props){
-		super(props)
-	}
+
 
 	render(){
 
@@ -30,7 +28,7 @@ const Item = (props)=>{
 
 	let { item } = props;
 	let { id, name, picture, pack, domestic, price, tip } = item;
-	let url = '/detail/'+id;
+	let url = '/detail/DefaultBar/'+id;
 	return (
 		<Link to={url}>
 			<div className="selection-item">
