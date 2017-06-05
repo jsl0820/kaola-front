@@ -58,4 +58,4 @@ class Shopping extends Component{
 	}
 }
 
-export default Statement
+export default Shopping

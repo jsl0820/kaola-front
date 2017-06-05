@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css'
+import './topcat.css'
 
 const TopCat =()=>{
 
