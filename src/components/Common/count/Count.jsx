@@ -12,7 +12,7 @@ class Count extends Component {
 
 	decrease(cont){
 
-		if(cont==0){
+		if(cont===0){
 			this.setState({count:0})
 		}else{
 			this.setState({count:cont-1})

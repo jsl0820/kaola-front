@@ -6,10 +6,8 @@ const Setting = ()=>{
 
 	let arrow = {
 		position:'absolute',
-		background:'red',
 		height:'10px',
 		width:'10px',
-		position:'absolute',
 		background:`url(${Img}) no-repeat -64px -89px`,
 		right:'10px',
 		top:'50%',

@@ -22,9 +22,7 @@ const Button = () =>{
 
 export default class Shopping extends Component{
 	
-	constructor(props){
-		super(props)
-	}
+
 
 	handleClick(){
 		console.log('111');
@@ -65,6 +63,9 @@ export default class Shopping extends Component{
 				break;
 			case 'AddCart':
 				part = AddCart;	
+				break;
+			default :
+				part = 	DefaultBar;
 				break;
 		}
 					  

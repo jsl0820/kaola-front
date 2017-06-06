@@ -16,12 +16,13 @@ class Banner extends Component{
 	turn (n){
 		var _n = this.state.nowLocal+n;
 		let { banner } = this.props;
+
 		if(_n<0){
 			_n = _n + banner.length;
-		}
-		if(_n>=banner.length){
+		}else if(_n>=banner.length){
 			_n = _n-banner.length;
 		}
+
 		this.setState({nowLocal:_n});
 	}
 

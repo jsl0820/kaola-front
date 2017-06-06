@@ -11,7 +11,7 @@ const GoodsIntro = (props)=>{
 			<div className="goods-intro-price">
 				<span>￥ <b>{detail.price}</b></span>
 				<span className="single-price">单件￥282.67</span>
-				<span className="single-price">包税</span>
+				<span className='single-price'>包税</span>
 			</div>
 			<div className="goods-intro-wrap"> </div>
 			<div className="goods-intro-content">

@@ -5,9 +5,7 @@ import './recommend.css'
 
 const RecommendItem = (props) =>{
 
-	let item = props.item;
-	let point = props.point;
-
+	let { item, point } = props
 	let style={
 		width:point.itemWidth,
 		display:'block',
@@ -17,7 +15,7 @@ const RecommendItem = (props) =>{
 	return (
 		<li className="recommend-item" style={style}>
 			<Link to='/detail'>
-				<img src={require(item.picture)} alt=""/>
+				<img src={require(`${item.picture}`)} alt=""/>
 				<p className="recommend-item-title">{item.title}</p>
 				<p className="recommend-item-price">
 					<span>￥{item.price}</span>
@@ -37,7 +35,7 @@ const Recommend = (props)=>{
 	let realWidth = (count/3)*(screenWidth+20);
 
 	let ulStyle={
-		width:realWidth+'px',
+		width:`${realWidth}px`,
 		overflowX:'hidden',
 	}
 

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 class BannerDot extends Component{
 	
-	constructor(props){
-		super(props);
-	}
 
 	handleDotClick(i){
 		var option = i-this.props.nowLocal;

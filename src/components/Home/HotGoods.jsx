@@ -5,8 +5,6 @@ import './hotgoods.css';
 
 class HotGoods extends Component{
 
-
-
 	render(){
 
 		let { goodes } = this.props;
@@ -28,11 +26,12 @@ const Item = (props)=>{
 
 	let { item } = props;
 	let { id, name, picture, pack, domestic, price, tip } = item;
-	let url = '/detail/DefaultBar/'+id;
+	let url = `/detail/DefaultBar/${id}`;
+
 	return (
 		<Link to={url}>
 			<div className="selection-item">
-				<img src={require(picture)} alt={name}/>
+				<img src={require(`${picture}`)} alt={name}/>
 				<div className="selection-title">
 					<p className="selection-goods"><span>{pack} |</span>{name}</p>
 					<p className="selection-price">国内价￥<del>{domestic}</del></p>
@@ -43,7 +42,5 @@ const Item = (props)=>{
 	)
 }
 
-
-	
 
 export default HotGoods;
