@@ -18,23 +18,6 @@ const Button = () =>{
 }
 
 
-/*class Statement extends Component{
-
-	render(){
-		return(
-			<div className="shopping-statement">
-				<div className="shopping-statement-check"> <CheckBox/> <span>全选</span></div>
-				<div className="shopping-statement-tolp">
-					<div>
-							总价 : <span>(￥59)</span>
-					</div>
-				</div>
-				<div className="shopping-statement-bnt">结算</div>
-			</div>
-		)
-	}
-} */
-
 
 
 export default class Shopping extends Component{

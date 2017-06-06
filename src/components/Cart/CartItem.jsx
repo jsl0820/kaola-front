@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Count from '../count/Count.jsx'
-import CheckBox from '../checkbox/CheckBox.jsx'
+import Count from '../Common/count/Count.jsx'
+import CheckBox from '../Common/checkbox/CheckBox.jsx';
 import './style.css'
 
 

@@ -36,7 +36,6 @@
 }
 
 .order-item{
-	border: solid 1px red;
 	display: flex;
 	padding: 0.266667rem 0.266667rem 0.266667rem 0;
 }
@@ -65,13 +64,21 @@
 }
 
 .order-fee{
-	border: solid 1px red;
+
+}
+
+.order-fee-first{
+	padding:0.266667rem;
+	color:#666;
+	font-size:13px;
+	border-bottom:solid #efefef 1px;
 }
 
 .order-fee-item{
 	display: flex;
 	padding: 0.266667rem;
 	color: #666;
+	border-bottom: solid 1px #efefef;
 }
 
 .order-fee-item div:nth-child(1){
@@ -80,7 +87,6 @@
 
 .address{
 	display: flex;
-	border: 1px solid red;
     padding: 0.4rem 0.266667rem;
     background-color: #5d5f63;
     color: #fff;

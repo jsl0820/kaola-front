@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React  from 'react';
 import Count from '../Common/count/Count.jsx';
 
 import './shopcart.css';

@@ -1,22 +1,3 @@
-.cart-topbar{
-	padding: 12px 15px;
-	height: 24px;
-	text-align: center;
-	font-size: 18px;
-	line-height: 24px;
-	border-bottom: 1px solid #ccc;
-}
-
-.cart-topbar span{
-	position: absolute;
-	height: 21px;
-	width: 11px;
-	background: url('../STATIC/img/icon.png') no-repeat -170px -194px;
-	background-size: 500px;
-	display: block;
-	top: 14px;
-	left: 10px;
-}
 
 .cart-product{
 
