@@ -2,13 +2,14 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-
 import Home from '../pages/Home.jsx';
 import Detail from '../pages/Detail.jsx';
 import CatList from '../pages/CatList.jsx';
 import Cart from '../pages/Cart.jsx';
 import Order from '../pages/Order.jsx';
 import '../static/App.css'
+
+
 
 const AppRoute = ()=>{
 

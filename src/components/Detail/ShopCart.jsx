@@ -14,15 +14,16 @@ export const TopBar =()=>(
 )
 
 
-export const Product = ()=>(
+export const Product = ({detail})=>(
+
 	<div className="cart-product">
 		<img src={require('./product.jpg')} alt=""/>
 		<div className="cart-product-text">
 			<p className="cart-product-tit">
-				MEDIHEAL 美迪恵尔 N.M.F针剂水库保湿面膜 10片/盒 补水网红
+				{detail.name}
 			</p>
 			<p className="cart-product-price">
-				<span>￥</span>79
+				<span>￥</span>{detail.price}
 				<span>(库存充足)</span>
 			</p>
 

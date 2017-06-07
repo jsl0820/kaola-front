@@ -47,7 +47,7 @@ const Goods = ()=>(
 const ShopCart=()=>(
 	<div>
 		<TopBar/>
-		<Product/>
+		<Product detail={DETAIL_GOODS}/>
 		<ProNum/>
 	</div>
 )
