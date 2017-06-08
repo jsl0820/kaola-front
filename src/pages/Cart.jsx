@@ -4,7 +4,10 @@ import CartItem from '../components/Cart/CartItem.jsx';
 import BuyBar from '../components/Cart/BuyBar.jsx';
 import './Cart.css';
 
-import { CART_ITEM } from './CartRedux.jsx';
+import { connect } from  'react-redux';
+
+
+//import { CART_ITEM } from './CartRedux.jsx';
 
 // const product = {
 // 		pid:1,
@@ -16,11 +19,13 @@ import { CART_ITEM } from './CartRedux.jsx';
 
 class Cart extends Component{
 
-
-
 	render(){
 
-		let goodes = CART_ITEM;
+		let { goodes, increase } = this.props;
+
+		console.log(goodes)
+
+
 		let catlist =  goodes.map((goodes,idx)=>{
 			return <CartItem item={goodes} key={idx}/>
 		})
@@ -36,4 +41,25 @@ class Cart extends Component{
 }
 
 
-export default Cart;
+function mapStateToProps(state){
+
+	return {
+		goodes:state.cartItem
+	}
+}
+
+function mapDispatchToProps(dispatch){
+	return {
+		increase:()=>dispatch({type:'ADD_NUM'}),
+		decrease:()=>dispatch({type:'DE_NUM'})
+	}
+}
+
+const CartList = connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Cart);
+
+export default CartList;
+
+

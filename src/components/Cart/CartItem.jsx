@@ -3,7 +3,7 @@ import Count from '../Common/count/Count.jsx'
 import CheckBox from '../Common/checkbox/CheckBox.jsx';
 import './style.css';
 
-
+import { connect } from  'react-redux';
 
 class  CartItem extends Component{
 
@@ -24,7 +24,9 @@ class  CartItem extends Component{
 						<div className="cart-item-tit">
 							<p className="cart-item-text">{name}</p>
 							<div className="cart-item-count">
-								<Count/>
+								<Count
+
+								/>
 							</div>
 							<div className="cart-item-pricedel">
 								<p>￥{price}</p>
@@ -40,5 +42,9 @@ class  CartItem extends Component{
 			)
 		}
 }
+
+
+
+
 
 export default CartItem
