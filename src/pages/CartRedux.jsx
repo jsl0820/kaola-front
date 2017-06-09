@@ -12,7 +12,7 @@ export const CART_ITEM=[
 		index:2,
 		pid:1,
 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
-		number:1,
+		number:2,
 		choice:true,
 		price:19.0,
 		totalPrice:19.0
@@ -21,7 +21,7 @@ export const CART_ITEM=[
 		index:3,
 		pid:1,
 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
-		number:1,
+		number:3,
 		choice:true,
 		price:19.0,
 		totalPrice:19.0
@@ -36,8 +36,8 @@ const CHOISE_ALL = 'CHOISE_ALL';
 // action 描述当前发生的事情
 // 改变state 的唯一方法就是使用action
 // action creator  
-export const addNum = (text)=>({type:ADD_NUM,text});
-export const deNum = (text)=>({type:ADD_NUM,text});
+export const addNum = (index)=>({type:ADD_NUM,index});
+export const deNum = (index)=>({type:ADD_NUM,index});
 export const choiseGoods = (text)=>({type:ADD_NUM,text});
 export const choiseAll = (text)=>({type:ADD_NUM,text});
 
@@ -47,7 +47,7 @@ export const choiseAll = (text)=>({type:ADD_NUM,text});
 // 接受action 和当前state 返回新的state
 // 这里要返回全部,全新的state 否则渲染出错 
 
-export  function handleCart (state,action){
+export  function handleCart (state=[],action){
 
 	let { cartItem } = state;
 
@@ -55,10 +55,18 @@ export  function handleCart (state,action){
 
 		case ADD_NUM:
 
-			
+			// const temp = cartItem;
+			// temp[action.index].number = 10;
+			// console.log(temp);
+
+			// return Object.assign({}, state, { 
+			// 	cartItem: [
+					
+			// 	]
+			//  })
 
 		case DE_NUM :
-			return 	cartItem	
+			return 	state	
 		default:
 			return state	
 	}

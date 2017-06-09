@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TopBar from '../components/Common/topbar/TopBar.jsx';
 import CartItem from '../components/Cart/CartItem.jsx';
 import BuyBar from '../components/Cart/BuyBar.jsx';
+import { addNum, deNum, choiseGoods, choiseAll }from './CartRedux.jsx';
 import './Cart.css';
 
 import { connect } from  'react-redux';
@@ -21,7 +22,7 @@ class Cart extends Component{
 		console.log(increase)
 
 		let catlist = goodes.map((goodes,idx)=>{
-			return <CartItem item={goodes}  handleIncrease={increase} key={idx}/>
+			return <CartItem item={goodes}  handleIncrease={increase}  index={idx} key={idx}/>
 		})
 
 		return(
@@ -44,7 +45,7 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
 	return {
-		increase:()=>dispatch({type:'ADD_NUM'}),
+		increase:(index)=>dispatch(addNum(index)),
 		// decrease:()=>dispatch({type:'DE_NUM'})
 	}
 }
