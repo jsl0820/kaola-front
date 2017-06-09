@@ -55,15 +55,24 @@ export  function handleCart (state=[],action){
 
 		case ADD_NUM:
 
-			// const temp = cartItem;
-			// temp[action.index].number = 10;
-			// console.log(temp);
+			let { number, totalPrice, price } = cartItem[action.index];
 
-			// return Object.assign({}, state, { 
-			// 	cartItem: [
-					
-			// 	]
-			//  })
+
+			return Object.assign({}, state, { 
+				cartItem: [
+					...state.cartItem.slice(0,action.index),
+					{
+						index:3,
+						pid:1,
+						name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
+						number: number+1,
+						choice:true,
+						price:19.0,
+						totalPrice:totalPrice+price
+					},
+					...state.cartItem.slice(action.index+1)
+				]
+			 })
 
 		case DE_NUM :
 			return 	state	
