@@ -45,6 +45,8 @@ export const choiseAll = (text)=>({type:ADD_NUM,text});
 // reducer
 // store 收到 action 必须给出新的state 引起view的改变
 // 接受action 和当前state 返回新的state
+// 这里要返回全部,全新的state 否则渲染出错 
+
 export  function handleCart (state,action){
 
 	let { cartItem } = state;
@@ -53,7 +55,7 @@ export  function handleCart (state,action){
 
 		case ADD_NUM:
 
-			console.log('123');	
+			
 
 		case DE_NUM :
 			return 	cartItem	

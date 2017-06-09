@@ -7,32 +7,26 @@ import './Cart.css';
 import { connect } from  'react-redux';
 
 
-//import { CART_ITEM } from './CartRedux.jsx';
-
-// const product = {
-// 		pid:1,
-// 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
-// 		choice:true,
-// 		price:19.0,
-// 		totalPrice:19.0
-// 	};
 
 class Cart extends Component{
+
+	handleClick(){
+		console.log('122');
+	}
 
 	render(){
 
 		let { goodes, increase } = this.props;
 
-		console.log(goodes)
+		console.log(increase)
 
-
-		let catlist =  goodes.map((goodes,idx)=>{
-			return <CartItem item={goodes} key={idx}/>
+		let catlist = goodes.map((goodes,idx)=>{
+			return <CartItem item={goodes}  handleIncrease={increase} key={idx}/>
 		})
 
 		return(
 			<div>
-				<TopBar title='选择规格'/>
+				<TopBar title='选择规格' onClick={this.handleClick.bind()}/>
 				{catlist}
 				<BuyBar/>
 			</div>
@@ -51,7 +45,7 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
 	return {
 		increase:()=>dispatch({type:'ADD_NUM'}),
-		decrease:()=>dispatch({type:'DE_NUM'})
+		// decrease:()=>dispatch({type:'DE_NUM'})
 	}
 }
 

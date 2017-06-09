@@ -11,7 +11,9 @@ class  CartItem extends Component{
 
 	render(){
 
-		let { id, name, choise, price, totalPrice } = this.props.item;
+		let { id, name, choise, price, totalPrice, number } = this.props.item;
+		let { handleIncrease } = this.props;
+
 
 		return (
 			<div className="cart-item-box">
@@ -24,8 +26,9 @@ class  CartItem extends Component{
 						<div className="cart-item-tit">
 							<p className="cart-item-text">{name}</p>
 							<div className="cart-item-count">
-								<Count
-
+								<Count 
+									handleIncrease={handleIncrease}
+									count={number}
 								/>
 							</div>
 							<div className="cart-item-pricedel">
