@@ -1,6 +1,5 @@
 export const CART_ITEM=[
 	{	
-		index:1,
 		pid:1,
 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
 		number:1,
@@ -9,7 +8,6 @@ export const CART_ITEM=[
 		totalPrice:19.0
 	},
 	{	
-		index:2,
 		pid:1,
 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
 		number:2,
@@ -18,7 +16,6 @@ export const CART_ITEM=[
 		totalPrice:19.0
 	},
 	{
-		index:3,
 		pid:1,
 		name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
 		number:3,
@@ -61,15 +58,12 @@ export  function handleCart (state=[],action){
 			return Object.assign({}, state, { 
 				cartItem: [
 					...state.cartItem.slice(0,action.index),
-					{
-						index:3,
-						pid:1,
-						name:'【官方直采】Merries 花王妙而舒 M王妙而M王妙而M王妙而M王妙而',
+										
+					Object.assign({}, state.cartItem[action.index], {
 						number: number+1,
-						choice:true,
-						price:19.0,
 						totalPrice:totalPrice+price
-					},
+					}),
+					
 					...state.cartItem.slice(action.index+1)
 				]
 			 })
